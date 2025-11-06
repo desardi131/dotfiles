@@ -26,6 +26,7 @@ unset rc
 alias cat="bat --pager never"
 alias spotify="flatpak run com.spotify.Client"
 alias ls="eza -l --icons"
+alias la="eza -la --icons"
 alias dotfiles="cd $HOME/dotfiles"
 afetch
 . "$HOME/.cargo/env"
