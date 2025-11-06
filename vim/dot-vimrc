@@ -153,6 +153,13 @@ nnoremap <leader>bd :bdelete<CR>
 
 " Type jj to exit insert mode quickly.
 inoremap jj <Esc>
+inoremap ' ''<left>
+inoremap " ""<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 " Press the space bar to type the : character in command mode.
 " nnoremap <space> :
