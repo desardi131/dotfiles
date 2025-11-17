@@ -73,7 +73,8 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 " PLUGINS ---------------------------------------------------------------- {{{
 " Con esta linea le indicamos a vim que rellene de esta manera las url de 
 " Plug para que asi siempre use ssh en lugar de https (usuario y contraseña)
-let g:plug_url_format = 'git@github.com:%s.git'
+"let g:plug_url_format = 'git@github.com:%s.git'
+let g:plug_url_format = 'https://github.com/%s.git'
 
 call plug#begin('~/.vim/plugged')
 
@@ -86,7 +87,6 @@ call plug#end()
 " }}}
 
 
-" MAPPINGS --------------------------------------------------------------- {{{
 
 " Set the backslash as the leader key.
 let mapleader = " "
@@ -158,6 +158,8 @@ inoremap " ""<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
+inoremap < <><left>
+inoremap </ </><left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
@@ -195,7 +197,7 @@ noremap <c-right> <c-w><
 
 " NERDTree specific mappings.
 " Map the F3 key to toggle NERDTree open and close.
-" nnoremap <F3> :NERDTreeToggle<cr>
+ nnoremap <F3> :NERDTreeToggle<cr>
 
 " Have nerdtree ignore certain files and directories.
 let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$']
