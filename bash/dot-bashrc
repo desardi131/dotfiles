@@ -28,5 +28,6 @@ alias spotify="flatpak run com.spotify.Client"
 alias ls="eza -l --icons"
 alias la="eza -la --icons"
 alias dotfiles="cd $HOME/dotfiles"
+alias dls="dirs -l -v"
 afetch
 . "$HOME/.cargo/env"
