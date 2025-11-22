@@ -13,6 +13,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# %F para el color, Unicode para ❱ = `ctrl+shift+u` + `2771+enter`
+PS1="%F{#00E000}%n%f:%F{#00E000}%1~%f$
+%F{#3D85C6}%B❱%b %f"
+RPROMPT="%F{#3D85C6}%f%K{#3D85C6} %F{#DDD}%B%T%b%f %k"
 alias ls="eza -l --icons"
 alias la="eza -la --icons"
 alias cat="bat --pager never"
