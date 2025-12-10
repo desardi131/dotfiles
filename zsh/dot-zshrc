@@ -1,3 +1,16 @@
+function alias_bat(){
+    local comando=""
+    if command -v bat > /dev/null;then
+        $comando="bat --pager never"
+    elif command -v batcat > /dev/null;then
+        $comando="batcat --pager never"
+    else
+        $comando="cat"
+    fi
+    echo "$comando"
+}
+
+fpath+=${ZDOTDIR:-~}/.zsh_functions
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -7,7 +20,7 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/desardi/.zshrc'
+zstyle :compinstall filename '/home/$USER/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -19,9 +32,9 @@ PS1="%F{#00E000}%n%f:%F{#00E000}%1~%f$
 RPROMPT="%F{#3D85C6}%f%K{#3D85C6} %F{#DDD}%B%T%b%f %k"
 alias ls="eza -l --icons"
 alias la="eza -la --icons"
-alias cat="bat --pager never"
+alias cat="alias_bat"
 alias dls="dirs -v -l"
 
-afetch
+fastfetch --logo ubuntu_small 
 
 . "$HOME/.cargo/env"
