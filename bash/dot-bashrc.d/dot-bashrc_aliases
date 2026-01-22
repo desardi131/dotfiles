@@ -1,0 +1,5 @@
+alias bat="bat --pager never"
+alias ls="eza -l --icons"
+alias la="eza -la --icons"
+alias dotfiles="cd $HOME/dotfiles"
+alias dls="dirs -l -v"
