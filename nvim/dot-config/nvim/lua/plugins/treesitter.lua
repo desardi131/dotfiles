@@ -8,7 +8,6 @@ return  {
                 enable = true
             },
             indent = { enable = true },
-            autotage = { enable = true },
             ensure_installed = {
                 "lua",
                 "php",
