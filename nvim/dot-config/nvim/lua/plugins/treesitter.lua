@@ -1,0 +1,43 @@
+return  {
+    'nvim-treesitter/nvim-treesitter',
+    build = ":TSUpdate",
+    config = function()
+        local configs = require("nvim-treesitter")
+        configs.setup({
+            highlight = {
+                enable = true
+            },
+            indent = { enable = true },
+            autotage = { enable = true },
+            ensure_installed = {
+                "lua",
+                "php",
+                "php_only",
+                "phpdoc",
+                "passwd",
+                "bash",
+                "zsh",
+                "nginx",
+                "markdown",
+                "markdown_inline",
+                "gitignore",
+                "gitcommit",
+                "git_config",
+                "css",
+                "html",
+                "python",
+                "javascript",
+                "yaml",
+                "json",
+                "toml",
+                "ssh_config",
+                "sql",
+                "regex",
+                "requirements",
+                "query",
+                "powershell",
+            },
+            auto_install = false,
+        })
+    end,
+}

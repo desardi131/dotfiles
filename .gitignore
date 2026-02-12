@@ -2,3 +2,6 @@ plugged/
 backup/
 swap/
 .netrwhist
+node_modules/
+lazy*.json
+*.json
