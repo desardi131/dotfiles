@@ -6,6 +6,11 @@ return {
         'tpope/vim-fugitive',
     },
     {
+        -- Plugin para instalar LSPs
+        "mason-org/mason.nvim",
+        opts = {}
+    },
+    {
     "norcalli/nvim-colorizer.lua",
     config = function()
       require("colorizer").setup()
