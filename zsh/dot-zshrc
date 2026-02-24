@@ -38,3 +38,6 @@ alias dls="dirs -v -l"
 fastfetch --logo ubuntu_small 
 
 . "$HOME/.cargo/env"
+export PATH="$PATH:/opt/nvim/bin"
+ source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh

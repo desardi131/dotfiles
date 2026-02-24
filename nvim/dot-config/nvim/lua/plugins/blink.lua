@@ -9,10 +9,7 @@ return {
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
-    -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
-    -- 'super-tab' for mappings similar to vscode (tab to accept)
-    -- 'enter' for enter to accept
-    -- 'none' for no mappings
+    -- {'default' = (C-y to accept;'super-tab' = (tab to accept);'enter' = (enter to accept);'none' = (no mappings))
     --
     -- All presets have the following mappings:
     -- C-space: Open menu or open docs if already open
