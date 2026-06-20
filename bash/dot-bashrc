@@ -32,3 +32,8 @@ fi
 unset rc
 #. "$HOME/.cargo/env"
 export EDITOR="vim"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+export GOPATH=$HOME/go
+export PATH=$PATH:$HOME/go/bin
