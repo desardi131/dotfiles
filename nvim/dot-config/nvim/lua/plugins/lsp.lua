@@ -13,7 +13,8 @@ return {
                 "yamlls",
                 "markdown_oxide",
                 "vimls",
-                "emmet_language_server"
+                "emmet_language_server",
+                "pylsp"
             })
         end,
     }
