@@ -7,6 +7,10 @@ set.shiftwidth = 4
 set.tabstop = 4
 set.autoindent = true
 set.expandtab = true
+set.inccommand = "split"
+
+set.splitbelow = true
+set.splitright = true
 
 set.ignorecase = true
 set.smartcase = true
